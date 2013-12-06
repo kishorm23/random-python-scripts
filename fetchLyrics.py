@@ -67,7 +67,7 @@ try:
 	run=False
 	inp = str(raw_input("\bSave lyrics(y/n)?"))
 	if inp=='y' or inp=='Y':
-		inp+=a2[len('Title: '):len(a2)]+".lyric'"
+		inp+=a2[len('Title: ')+1:len(a2)]+".lyric"
 		try:
 			file_w=open(inp,'a')
 			file_w.write(op+'\n'+lyric)
